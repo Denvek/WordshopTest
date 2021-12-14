@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DownloadPostcodes", "Downlo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostcodeSearch", "PostcodeSearch\PostcodeSearch.csproj", "{1CD3257F-5779-47D3-BEF0-791F8025954F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostcodeSearch.Db", "PostcodeSearch.Db\PostcodeSearch.Db.csproj", "{97DF3BD3-DC76-40C9-89AF-F4127109BAEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1CD3257F-5779-47D3-BEF0-791F8025954F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CD3257F-5779-47D3-BEF0-791F8025954F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CD3257F-5779-47D3-BEF0-791F8025954F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DF3BD3-DC76-40C9-89AF-F4127109BAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DF3BD3-DC76-40C9-89AF-F4127109BAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DF3BD3-DC76-40C9-89AF-F4127109BAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DF3BD3-DC76-40C9-89AF-F4127109BAEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
