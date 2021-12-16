@@ -1,0 +1,19 @@
+Instructions for running the tech challenge project
+
+Setup
+1. Update the connection string in the appSettings.json file of the PostcodeSearch project to point to a database server you have access to
+2. Run the migrations contained within the PostcodeSearch.Db project to set up the database
+
+Running the project
+Unfortunately, I did not have time to complete this, so the console application project DownloadPostcodes does not do anything. What it should do is use an HttpRequest to run the Import action on the Postcode Controller of the PostcodeSearch API project. (/api/Postcode/import)
+This action should download the ONS Postcode Directory zip file from http://parlvid.mysociety.org/os/, extract the files in the zip, and import the postcodes into the databases, but the download part did not work for me and I did not have time to properly debug and resolve this. The extraction of files from the zip, and importing into the database from the CSV are working.
+The two other actions on the API are the search actions
+- /api/Postcode/search will take a string and search for all postcodes that partial match that string, ignoring spaces
+- /api/Postcode/searchradius will take a latitude, longitude, and distance in kilometres and return all postcodes within that distance of that point.
+
+I also did not have time to write unit tests - there should be one each for the search and searchradius actions, and on the import action I would write tests for each of the parts of that method
+- Creating or cleaning the directory to download the zip file to
+- Downloading the zip file
+- Extracting the zip file
+- Reading the CSV files
+- Inserting the data into the database
